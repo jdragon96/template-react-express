@@ -1,0 +1,22 @@
+{
+  "name": "@proj/root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "add": "^2.0.6",
+    "eslint": "^8.52.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-react": "^7.33.2",
+    "lerna": "^6.6.1",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3",
+    "yarn": "^1.22.19"
+  },
+  "scripts": {
+    "build": "lerna run build --parallel",
+    "dev": "lerna run dev --parallel",
+    "start": "lerna run start --stream"
+  }
+}
